@@ -12,10 +12,11 @@ function Login() {
     auth
       .signInWithPopup(provider)
       .then((result) => {
+        console.log(result);
         dispatch(
           login({
             username: result.user.displayName,
-            profilePic: result.user.photoUrl,
+            profilePic: result.user.photoURL,
             id: result.user.uid,
           })
         );
@@ -27,7 +28,7 @@ function Login() {
     <div className="login">
       <div className="login_container">
         <img src="https://scx2.b-cdn.net/gfx/news/2017/1-snapchat.jpg" alt="" />
-        <Button variant="outline" onClick={signIn}>
+        <Button variant="outlined" onClick={signIn}>
           Sign in
         </Button>
       </div>
