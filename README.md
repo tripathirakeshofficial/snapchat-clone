@@ -13,7 +13,7 @@
 > 
 > It starts with Google Authentication in the login page. After login, Camera opens and taking a picture takes it to the picture preview. Once, Sent the image is uploaded in the Firestore database and the user is taken to the list of chats. 
 > 
-> The unread recent chat is shown at the top and and is notified to the user. CLicking on the chats will open up the preview of that particular image and shown while a 15 second Snpachat timer runs in the foreground. Clicking on the user image in the list will log out the user. 
+> The unread recent chat is shown at the top and and is notified to the user. Clicking on the chats will open up the preview of that particular image and shown while a 15 second Snpachat timer runs in the foreground. Clicking on the user image in the list will log out the user. 
 > 
 > The project is hosted using Firebase.
 
